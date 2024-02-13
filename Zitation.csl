@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="de-DE">
+  <info>
+    <title>Eigener Zitationsstil</title>
+    <id>http://www.example.com/my-custom-citation-style</id>
+    <author>
+      <name>Dein Name</name>
+      <email>deine@emailadresse.com</email>
+    </author>
+    <category citation-format="author-date"/>
+    <category field="generic-base"/>
+  </info>
+  <locale xml:lang="de-DE"/>
+  <citation>
+    <layout>
+      <names variable="author">
+        <name delimiter=", " initialize-with="."/>
+        <name delimiter=", " form="short" initialize-with="."/>
+      </names>
+      <text variable="title"/>
+      <text variable="title" suffix=": "/>
+      <text variable="collection-title" prefix=" (" suffix=")"/>
+      <text term="edition" form="short" suffix=", "/>
+      <place/>
+      <date variable="issued">
+        <date-part name="year"/>
+      </date>
+      <text suffix="."/>
+    </layout>
+  </citation>
+  <bibliography>
+    <layout>
+      <text variable="author"/>
+      <text variable="title"/>
+      <text variable="title" suffix=": "/>
+      <text variable="collection-title" prefix=" (" suffix=")"/>
+      <text term="edition" form="short" suffix=", "/>
+      <place/>
+      <date variable="issued">
+        <date-part name="year"/>
+      </date>
+      <text suffix="."/>
+    </layout>
+  </bibliography>
+</style>
